@@ -10,6 +10,7 @@ This project is a simple API application that provides current USD to UAH exchan
   - [Subscribe Email](#subscribe-email)
 - [Project Structure](#project-structure)
 - [Docker Setup](#docker-setup)
+- [Troubleshooting](#Troubleshooting)
 
 ## Installation
 
@@ -142,6 +143,9 @@ To stop the application, run:
     docker-compose down
 ```
 
+### Troubleshooting
+
+#### PHP dependencies not installed, vendor dir is empty
 If vendor dir not created during the Docker build process and dependencies are not installed automatically, do it manually running:
 ```bash
 docker-compose run web composer install
