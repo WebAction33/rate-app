@@ -141,3 +141,8 @@ To stop the application, run:
 ```bash
     docker-compose down
 ```
+
+If vendor dir not created during the Docker build process and dependencies are not installed automatically, do it manually running:
+```bash
+docker-compose run web composer install
+```
