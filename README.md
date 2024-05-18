@@ -146,7 +146,7 @@ To stop the application, run:
 ### Troubleshooting
 
 #### PHP dependencies not installed, vendor dir is empty
-If vendor dir not created during the Docker build process and dependencies are not installed automatically, do it manually running:
+If `vendor` dir not created during the Docker build process and dependencies are not installed automatically, do it manually running:
 ```bash
 docker-compose run web composer install
 ```
